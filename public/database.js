@@ -26,9 +26,8 @@ updateData = () => {
 pushData = () => {
   firebase
     .database()
-    .ref("profile")
-    .child("devices")
-    .push('samsung');
+    .ref("messages")
+    .push('ไอบ้า');
 };
 
 deleteData = () => {

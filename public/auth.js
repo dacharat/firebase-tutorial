@@ -50,16 +50,16 @@ firebase.auth().onAuthStateChanged(user => {
       .once("value", snapshot => {
         if (!snapshot.exists()) {
           //Create User
-          firebase
-            .database()
-            .ref("users")
-            .child(user.uid)
-            .set({
-              displayName: user.displayName,
-              photoURL: user.photoURL,
-              email: user.email,
-              purchaseHistory: ["Nike", "Converse", "Adidas"]
-            });
+          // firebase
+          //   .database()
+          //   .ref("users")
+          //   .child(user.uid)
+          //   .set({
+          //     displayName: user.displayName,
+          //     photoURL: user.photoURL,
+          //     email: user.email,
+          //     purchaseHistory: ["Nike", "Converse", "Adidas"]
+          //   });
         }
       });
   } else {
