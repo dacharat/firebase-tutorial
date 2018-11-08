@@ -9,6 +9,20 @@
 </head>
 
 <body>
+  <h1>Authentication</h1>
+  <pre id="auth-info"></pre>
+  <input type='text' placeholder="email" id="email">
+  <input type='text' placeholder="password" id="password">
+  <br>
+  <button onclick="createUser()">Create user</button>
+  <button onclick="loginWithEmail()">Login</button>
+  <br>
+  <button onclick="loginWithGoogle()">Login with Google</button>
+  <button onclick="loginWithFacebook()">Login with Facebook</button>
+
+  <br>
+  <button onclick="logout()">Log out</button>
+  <hr>
   <h1>Realtime Database</h1>
   <pre id='realtime-data'></pre>
   <button onclick="setData()">set</button>
@@ -43,6 +57,8 @@
 
   <script src='database.js'></script>
   <script src='storage.js'></script>
+  <script src='auth.js'></script>
+
 </body>
 
 </html>
